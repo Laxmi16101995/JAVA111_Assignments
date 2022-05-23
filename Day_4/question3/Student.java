@@ -1,5 +1,7 @@
 package com.question3;
 
+
+
 public class Student {
 
 	int roll;
@@ -13,22 +15,22 @@ public class Student {
 		
 	}
 	
-	 public Student(int roll1,String name1 ,String address1){
+	 public Object Student(int roll1,String name1 ,String address1){
 		
 		roll= roll1;
 		name= name1;
 		address= address1;
 		collegeName="NIT";
-		
+		return this;
 	}
 	
-	public Student(int roll1,String name1 ,String address1,String collegeName1){
+	public Object Student(int roll1,String name1 ,String address1,String collegeName1){
 		
 		roll= roll1;
 		name= name1;
 		address= address1;
 		collegeName=collegeName1;
-		
+		return this;
 	}
 	
 	//-----------------------Getter Setter Methods-------------------------------------
@@ -64,27 +66,23 @@ public class Student {
 		return collegeName;
 	}
 	
-	//----------------------------Show details obj------------------------------------------
 	
-	
-	
-	public void showObject() {
-			
-			System.out.println("Roll Number is: "+roll);
-			System.out.println("Name is: "+name);
-			System.out.println("Age is: "+address);
-			System.out.println("Marks are: "+collegeName);
-	}
+
 
 	
-	public static void getStudent(boolean isFromNIT) {
+	public static Student getStudent(boolean isFromNIT) {
 		
 		if(isFromNIT==true) {
-			Student s= new Student(10,"Laxmi Wavale","Nanded, Maharashtra");
-			s.showObject();
-		}else {
-			Student s= new Student(10,"Sonal","Pune, Mahatastra","COEP");
-			s.showObject();
+			Student e= new Student();
+			Object a= e.Student(6554,"Laxmi","Nanded, Maharastra");
+			Student aaaa = Student.class.cast(a);
+			return aaaa;
+		}
+		else {
+			Student e= new Student();
+			Object a= e.Student(101,"Sonal Wavale","Pune, Maharastra","COEP");
+			Student aaaa = Student.class.cast(a);
+			return aaaa;
 		}
 	}
 }
