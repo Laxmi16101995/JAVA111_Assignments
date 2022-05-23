@@ -1,0 +1,17 @@
+Why String is immutable in java?
+
+	string is immutable in java becuase of the security perpose. suppose if string is mutable in java 
+	then and if someone made changes in the string then it will be applied to everywhere and some important imformation 
+	get disturbed. so that is a reason to keep string is immutable.
+	
+
+what is the difference between String and String Builder?	
+
+	String									String Builder
+------------------------------------------------------------------	
+string is immutable					String Builder helps to do change in
+									string by creating modified string with
+									the help of different methods.	
+---------------------------------------------------------------------------
+
+									
