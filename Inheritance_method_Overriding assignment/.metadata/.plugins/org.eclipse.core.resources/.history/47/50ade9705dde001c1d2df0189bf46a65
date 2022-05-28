@@ -1,0 +1,17 @@
+/*
+ * 
+ * Dynamic polymorphism means we have 2+ methods with the same name, but in different types in the same hierarchy.
+ *  And the decision on which of them to execute happens at RUN-TIME
+*/
+
+
+package com.question2;
+
+public class StaticPolymorphism {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
