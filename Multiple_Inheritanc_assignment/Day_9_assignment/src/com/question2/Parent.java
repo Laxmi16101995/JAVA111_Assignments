@@ -22,10 +22,6 @@ public class Parent {
 
 	}
 	
-	void method4() {
-		System.out.println("this method belongs to Parent class");
-
-	}
 	
 	public static void main(String[] args) {
 		
@@ -37,9 +33,13 @@ public class Parent {
 			
 			Child c= new Child(num);
 			c.method1();
+			c.method4();
 			
 			Parent p= new Parent(num);
 			p.method1();
+			p.method2();
+			p.method3();
+			
 			
 		
 			
