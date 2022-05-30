@@ -1,0 +1,44 @@
+package com.question2;
+
+import java.util.Scanner;
+
+public class Parent {
+
+	void method1() {
+		System.out.println("number---"+number);
+	}
+	
+	final void method2() {
+		System.out.println("this method belongs to Parent class");
+	}
+	
+	void method3() {
+		System.out.println("this method belongs to Parent class");
+
+	}
+	
+	void method4() {
+		System.out.println("this method belongs to Parent class");
+
+	}
+	
+	final int number = 0;
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your number");
+		int num= scan.nextInt();
+		
+		if(num<=10 || num>=1) {
+			
+			Parent c= new Parent();
+			c.number=num;
+		}else {
+			System.out.println("Invalid number");
+		}
+		
+	}
+	
+	
+}

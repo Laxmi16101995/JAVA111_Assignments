@@ -1,0 +1,18 @@
+package com.question2;
+
+import java.util.Scanner;
+
+final class Child extends Parent {
+
+	@Override
+	void method1() {
+		System.out.println("number---"+number);
+	}
+	
+	void method4() {
+		System.out.println("this method belongs to Child class");
+
+	}
+	
+	
+}

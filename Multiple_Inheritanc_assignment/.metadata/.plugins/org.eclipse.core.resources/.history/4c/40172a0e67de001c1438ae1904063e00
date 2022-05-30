@@ -1,0 +1,58 @@
+package com.question1;
+
+import java.util.Scanner;
+
+public class Student {
+
+	private int roll;
+	private String name;
+	private int marks;
+	private char grade;
+	
+	
+	
+	private char calculateGrade(int marks){
+		
+		if(marks>=500) {
+			return 'A';
+		}
+		else if(marks<500 && marks>=400) {
+			return 'B';
+		}
+		else if(marks<400) {
+			return 'C';
+		}
+		
+		return 'D';
+		
+	}
+	
+	public void displayDetails() {
+		
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter student Name: ");
+		String name= scan.next();
+		
+		System.out.println("Enter student roll Number: ");
+		int roll= scan.nextInt();
+		
+		System.out.println("Enter student Marks: ");
+		int marks= scan.nextInt();
+		
+		char grade=calculateGrade(marks);
+		
+		toString();
+		
+		
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "Student roll= " + roll + "Student name=" + name + "Student marks=" + marks + "Student grade=" + grade;
+	}
+	
+	
+	
+}

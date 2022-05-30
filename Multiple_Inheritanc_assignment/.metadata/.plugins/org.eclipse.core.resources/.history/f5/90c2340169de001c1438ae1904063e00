@@ -1,0 +1,11 @@
+package com.question2;
+
+public class Child extends Parent {
+
+	@Override
+	void method1() {
+		
+	}
+	
+	
+}

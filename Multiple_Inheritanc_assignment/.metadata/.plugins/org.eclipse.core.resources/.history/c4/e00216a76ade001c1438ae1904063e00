@@ -1,0 +1,13 @@
+package com.question2;
+
+final class Child extends Parent {
+
+	@Override
+	void method1() {
+		System.out.println("hello");
+	}
+	
+	void method4() {
+		
+	}
+}

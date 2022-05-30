@@ -1,0 +1,20 @@
+package com.question2;
+
+public class Parent {
+
+	void method1() {
+		System.out.println("hi");
+	}
+	
+	private void method2() {
+		
+	}
+	
+	void method3() {
+		
+	}
+	
+	final int number= 101;
+	
+	
+}

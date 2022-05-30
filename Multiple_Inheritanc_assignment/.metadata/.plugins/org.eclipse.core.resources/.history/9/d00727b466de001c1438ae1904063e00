@@ -1,0 +1,37 @@
+package com.question1;
+
+public class Student {
+
+	private int roll;
+	private String name;
+	private int marks;
+	private char grade;
+	
+	
+	
+	private char calculateGrade(){
+		
+		return 'a';
+	}
+	
+	public void displayDetails() {
+		
+		
+	}
+
+	public Student(int roll, String name, int marks, char grade) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		this.marks = marks;
+		this.grade = grade;
+	}
+
+	@Override
+	public String toString() {
+		return "Student roll= " + roll + "Student name=" + name + "Student marks=" + marks + "Student grade=" + grade;
+	}
+	
+	
+	
+}
