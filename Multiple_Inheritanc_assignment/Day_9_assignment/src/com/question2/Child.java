@@ -2,7 +2,7 @@ package com.question2;
 
 import java.util.Scanner;
 
-class Child extends Parent {
+final class Child extends Parent {
 
 	Child(int num) {
 		super(num);
