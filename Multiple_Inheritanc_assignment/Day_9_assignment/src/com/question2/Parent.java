@@ -33,7 +33,7 @@ public class Parent {
 			
 			Child c= new Child(num);
 			c.method1();
-			c.method2();
+			c.method4();
 			
 			Parent p= new Parent(num);
 			p.method1();
