@@ -37,9 +37,14 @@ public class Parent {
 			
 			Child c= new Child(num);
 			c.method1();
+			c.method2();
 			
 			Parent p= new Parent(num);
 			p.method1();
+			p.method2();
+			p.method3();
+			p.method4();
+			
 			
 		
 			
