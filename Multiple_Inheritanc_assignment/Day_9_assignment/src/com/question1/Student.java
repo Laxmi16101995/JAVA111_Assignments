@@ -51,11 +51,10 @@ public class Student {
 		else if(marks<500 && marks>=400) {
 			return 'B';
 		}
-		else if(marks<400) {
+		else{
 			return 'C';
 		}
 		
-		return 'D';
 		
 	}
 	
